@@ -6,7 +6,7 @@ exports.handler = async (event, context) => {
 
     console.log("Prompt received:", prompt);
 
-    const response = await fetch("https://api-inference.huggingface.co/Salesforce/codegen2-1B", {
+    const response = await fetch("https://IcarusCodeHelper.hf.space/run/predict", {
       method: "POST",
       headers: { 
         "Authorization": `Bearer ${process.env.HUGGINGFACE_TOKEN}`,
