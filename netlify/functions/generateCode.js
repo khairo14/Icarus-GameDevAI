@@ -6,7 +6,7 @@ exports.handler = async (event, context) => {
 
     console.log("Prompt received:", prompt);
 
-    const response = await fetch("https://api-inference.huggingface.co/models/Salesforce/codegen-350M-mono", {
+    const response = await fetch("https://api-inference.huggingface.co/models/bigcode/starcoderbase", {
       method: "POST",
       headers: { 
         "Authorization": `Bearer ${process.env.HUGGINGFACE_TOKEN}`,
